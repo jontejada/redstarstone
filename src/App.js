@@ -119,9 +119,9 @@ function sendTag(key, val) {
 function Logo() {
   return (
     <div className="logo">
-      <p>SEDONA</p>
+      <p>RED</p>
+      <p>STAR</p>
       <p>STONE</p>
-      <p>VENEER</p>
     </div>
   );
 }
@@ -129,13 +129,12 @@ function Logo() {
 function QuotePrompt() {
   return (
     <div className="clear-box-container box-container">
-      <h3>For a free quote, please fill out the form or give us a call. Relevant info includes:</h3>
+      <h3>For a free quote, please give us a call. Relevant info includes:</h3>
       <ul>
         <li>Total square footage of flat areas to be covered with stone</li>
         <li>Total linear footage (height) of corners to be covered</li>
         <li>Stone Style & Color Scheme preferences</li>
         <li>Any Trimstones</li>
-        <li>Preference of delivery location or pick-up from our Mesa shop</li>
       </ul>
     </div>
   );
@@ -145,16 +144,14 @@ function GMap() {
   return (
     <>
       <div className="map-text">
-        <h2><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action">9605 East Main St. Mesa, AZ 85207</a></h2>
-        <i>We're at the SE corner of 96th St & Main St (aka Apache Trail), next to Craft City.</i>
-        <p><b>Hours:</b>&nbsp;&nbsp;Mon to Fri: 8AM – 4:30PM&nbsp;&nbsp;&nbsp;Sat: Please call ahead for hours.</p>
+        <h2><a href="https://goo.gl/maps/8LN8ube3oseHXbDB7" className="call_to_action">3505 E Charleston Blvd, Las Vegas, NV 89104</a></h2>
       </div>
       <iframe
         width="100%"
         height="450"
         frameBorder="0"
-        title="map of Sedona Stone Veneer at 9605 East Main St. Mesa, AZ 85207"
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgVBnsl6wK4cRNDqotuzkOhc&key=AIzaSyCVHr2ug300Slszr1DiJrTCjqvO2Kmddhg&zoom=10"
+        title="map of RED STAR STONE"
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ1cVRearEyIARLsa8EpVliv0&key=AIzaSyCVHr2ug300Slszr1DiJrTCjqvO2Kmddhg&zoom=10"
       ></iframe>
     </>
   );
@@ -162,7 +159,7 @@ function GMap() {
 
 function Phone() {
   return (
-    <h2><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 – 0004</a></h2>
+    <h2><a className="call_to_action" href="tel:+1-702-459-0909">(702) 459 – 0909</a></h2>
   );
 }
 
@@ -183,9 +180,8 @@ function App() {
       <header>
         <Logo />
         <div className="description">
-          <p>Local manufacturer of beautiful stone veneer.</p>
           <p>High quality products at factory direct prices.</p>
-          <p>Family owned & operated. <b><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></b></p>
+          <p><b><a className="call_to_action" href="tel:+1-702-459-0909">(702) 459 – 0909</a></b></p>
         </div>
       </header>
       <div className="nav_logo"><Logo /></div>
@@ -198,19 +194,19 @@ function App() {
           <li><a href="#trim">Trim</a></li>
         </ul>
       </nav>
-      <div className="side_tel"><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 - 0004</a></div>
+      <div className="side_tel"><a className="call_to_action" href="tel:+1-702-459-0909">(702) 459 – 0909</a></div>
       <main>
         <section id="photos" className="gallery">
           <div className="section_description">
-            <p><b>Click on photos</b> to see Sedona Stone Veneer projects from across the Southwest. We offer 10 Stone Styles & 9 Color Schemes and a variety of trim stones.</p>
+            <p><b>Click on photos</b> to see Red Star Stone projects from across the Southwest. We offer 10 Stone Styles & 9 Color Schemes and a variety of trim stones.</p>
           </div>
           <PhotoSwipeGallery items={galleryItems} options={Object.assign({ galleryUID: 0 }, options)} thumbnailContent={getThumbnailContent}/>
         </section>
         <section id="contact">
           <QuotePrompt />
-          <LabeledBox title="Message Us">
+          {/* <LabeledBox title="Message Us">
             <Form />
-          </LabeledBox>
+          </LabeledBox> */}
           <LabeledBox title="Call Us">
             <Phone />
           </LabeledBox>
@@ -292,8 +288,8 @@ function App() {
       <footer>
         <Logo />
         <div className="description">
-          <h2><a className="call_to_action" href="tel:+1-602-845-0004">(602) 845 – 0004</a></h2>
-          <h3><a href="https://goo.gl/maps/n1ByS5gEVa5P7KRP7" className="call_to_action">9605 East Main St. Mesa, AZ 85207</a></h3>
+          <h2><a className="call_to_action" href="tel:+1-702-459-0909">(702) 459 – 0909</a></h2>
+          <h3><a href="https://goo.gl/maps/8LN8ube3oseHXbDB7" className="call_to_action">3505 E Charleston Blvd, Las Vegas, NV 89104</a></h3>
         </div>
       </footer>
     </>
